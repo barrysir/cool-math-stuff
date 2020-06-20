@@ -1,0 +1,236 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -16
+xMax = 16
+xTickUnit = 5
+xGridUnit = 5
+yMin = -16.66666
+yMax = 15.33333
+yTickUnit = 5
+yGridUnit = 5
+AxesColor = clMedGray
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = (0.75*acos(cos(pi*x))/pi - 0.25)^2
+Visible = 0
+Color = 0x000033CC
+
+[Func2]
+FuncType = 0
+y = acos(cos((x-2)/(3-2)*pi))/pi
+Visible = 0
+Color = 0x000033CC
+
+[Func3]
+FuncType = 0
+y = sqrt((-Abs(x - 2)/2 + Abs(x - 1)/2 - 1/2)*(-Abs(x - 2)/2 + Abs(x - 1)/2 + 1/2))
+Visible = 0
+Color = 0x000033CC
+
+[Func4]
+FuncType = 0
+y = sqrt(2)*sqrt(Abs(x - 3)^2 - 2*Abs(x - 3)*Abs(x - 1) + Abs(x - 1)^2 - Abs(-Abs(x - 3) + Abs(x - 1) + 2)*Abs(Abs(x - 3) - Abs(x - 1) + 2) - 4)/4 + Abs(x)/2 + Abs(x - 5) - Abs(x - 3) - Abs(x - 1)/2 + 1/2
+Visible = 0
+Color = 0x000033CC
+
+[Func5]
+FuncType = 0
+y = sqrt(x^2 - 4*x - Abs(x^2 - 4*x + 3) - Abs(x^2 - 4*x - Abs(x^2 - 4*x + 3) + 3) + 3)/2 + Abs(x)/2 + Abs(x - 5) - Abs(x - 3) - Abs(x - 1)/2 + 1/2
+Visible = 0
+Color = 0x000033CC
+
+[Func6]
+FuncType = 0
+y = -1/((4*x+0.12)*(4*x-4.12))
+Visible = 0
+Color = 0x000033CC
+
+[Func7]
+FuncType = 0
+y = 1/(-Abs(x/2 - 1/2) + Abs(x/2 + 1/2))
+Visible = 0
+Color = 0x000033CC
+
+[Func8]
+FuncType = 0
+y = sqrt((x-3)^2 + x^2 - 3^2 - 2*abs(x*(x-3)))
+Visible = 0
+Color = 0x000033CC
+
+[Func9]
+FuncType = 0
+y = asin(sin(x)) + abs(asin(sin(x)))
+Visible = 0
+Color = 0x000033CC
+
+[Func10]
+FuncType = 0
+y = asin(x)
+Visible = 0
+Color = 0x000033CC
+
+[Func11]
+FuncType = 0
+y = 0.25/((x-0.5)*(x-0.5))
+Visible = 0
+Color = 0x000033CC
+
+[Func12]
+FuncType = 0
+y = (acos(-sin(x)) - pi/2)^2
+Visible = 0
+Color = 0x000033CC
+
+[Func13]
+FuncType = 0
+y = (3*acos(-sin(2*x/3 + pi/6))/2 - pi)^2
+Visible = 0
+Color = 0x000033CC
+
+[Func14]
+FuncType = 0
+y = (4*acos(cos(pi*(x/4 + 1/2)))/pi - 2)^3
+Visible = 0
+Color = clBlue
+
+[Func15]
+FuncType = 0
+y = 2*(x+1)*(1-H(x+1))
+Visible = 0
+Color = clGreen
+
+[Func16]
+FuncType = 0
+y = (x^2-1)*(H(x+1)-H(x-2))
+Visible = 0
+Color = clBlue
+
+[Func17]
+FuncType = 0
+y = 3*H(x-2)
+Visible = 0
+Color = clPurple
+
+[Func18]
+FuncType = 0
+y = If(x<0, -3, If(x<1.5, -2*(x-1)^2-1, -2*(1.5-1)^2-1))
+Visible = 0
+Color = clGreen
+
+[Func19]
+FuncType = 0
+y = If(x<-2, 3, If(x<0, (x+1)^2+1, 1))
+Visible = 0
+Color = clBlue
+
+[Func20]
+FuncType = 0
+y = x - Abs(x + 1) + (-Abs(x - 2) + Abs(x + 1) + 1)^2/4
+Visible = 0
+Color = clBlue
+
+[Func21]
+FuncType = 0
+y = (abs(x)-abs(x-1)+1)/2
+Visible = 0
+Color = clBlue
+
+[Func22]
+FuncType = 0
+y = 3*(16*(Abs(3*Abs(16*x - 11*pi) - Abs(48*x - 47*pi) + 2*pi) + Abs(3*Abs(16*x - 11*pi) - Abs(48*x - 19*pi) + 2*pi))*(48*Abs(x) - 16*Abs(3*x - pi) - 17*pi)*(48*Abs(x) - 16*Abs(3*x - pi) + 17*pi)*(-6*Abs(8*x - 11*pi) + 2*Abs(24*x - 25*pi) - 17*pi)*(-6*Abs(8*x - 11*pi) + 2*Abs(24*x - 25*pi) + 17*pi) - 1026*pi*(48*Abs(x) - 16*Abs(3*x - pi) - 17*pi)*(48*Abs(x) - 16*Abs(3*x - pi) + 17*pi)*(-6*Abs(8*x - 11*pi) + 2*Abs(24*x - 25*pi) - 17*pi)*(-6*Abs(8*x - 11*pi) + 2*Abs(24*x - 25*pi) + 17*pi) - 9537*pi^3*(48*Abs(x) - 16*Abs(3*x - pi) - 17*pi)*(48*Abs(x) - 16*Abs(3*x - pi) + 17*pi) - 9537*pi^3*(-6*Abs(8*x - 11*pi) + 2*Abs(24*x - 25*pi) - 17*pi)*(-6*Abs(8*x - 11*pi) + 2*Abs(24*x - 25*pi) + 17*pi))/(578*pi*(48*Abs(x) - 16*Abs(3*x - pi) - 17*pi)*(48*Abs(x) - 16*Abs(3*x - pi) + 17*pi)*(-6*Abs(8*x - 11*pi) + 2*Abs(24*x - 25*pi) - 17*pi)*(-6*Abs(8*x - 11*pi) + 2*Abs(24*x - 25*pi) + 17*pi))
+Visible = 0
+Color = clBlue
+
+[Func23]
+FuncType = 0
+y = abs(1932*abs(acos(cos(pi*(20*x/69 + 1))) - pi) - 7*abs(276*acos(cos(pi*(20*x/69 + 1))) - 211*pi) + 65*pi)/(390*pi) - 545/192 + 79475*pi^2/(-1024*abs(69*acos(-cos(20*pi*x/69)) - 49*pi)^2 + 2048*abs(69*acos(-cos(20*pi*x/69)) - 49*pi)*abs(69*acos(-cos(20*pi*x/69)) - 29*pi) - 1024*abs(69*acos(-cos(20*pi*x/69)) - 29*pi)^2 + 462400*pi^2)
+Visible = 0
+Color = clBlue
+
+[Func24]
+FuncType = 0
+y = asin(sin(x))
+Visible = 0
+Color = clBlue
+
+[Func25]
+FuncType = 0
+y = atan(cot(x))
+Visible = 0
+Color = clPurple
+
+[Func26]
+FuncType = 0
+y = 768*abs(abs(x)/2 - 7*abs(8*abs(x)/7 - 1)/16 + 1/16)/289 - 1635/578 - 99/(2048*(abs(abs(x) - 33/16)/2 - abs(abs(x) - 17/16)/2 - 17/32)*(abs(abs(x) - 33/16)/2 - abs(abs(x) - 17/16)/2 + 17/32))
+Visible = 0
+Color = clPurple
+
+[Func27]
+FuncType = 0
+y = (Abs(x - 111/160) - 111/160)/(Abs(x)/2 + Abs(x - 111/80)/2 - 111/160) - 1
+Visible = 0
+Color = clPurple
+
+[Func28]
+FuncType = 0
+y = abs(abs(x)-1)
+Visible = 0
+Color = clPurple
+
+[Func29]
+FuncType = 0
+y = -Abs(x) + Abs(x - 1) + Abs(x + 1) - 1
+Visible = 0
+Color = clPurple
+
+[Func30]
+FuncType = 0
+y = -Abs(x)/2 - Abs(2*x - 7/4)/4 + Abs(2*x - 3/4)/4 + 3*Abs(8*x/3 - 1)/16 + 7/16
+Visible = 0
+Color = clPurple
+
+[Func31]
+FuncType = 0
+y = abs(x-1) + abs(x+1) - 3
+Visible = 0
+Color = clPurple
+
+[Func32]
+FuncType = 0
+y = abs(112*abs(x) - 7*abs(16*abs(x) - 13) + 13)/78 - 545/192 + 3179/(64*(-512*abs(x)^2 + 1536*abs(x) + 512*abs(abs(x) - 2)*abs(abs(x) - 1) - 991))
+Visible = 0
+Color = clBlue
+
+[Func33]
+FuncType = 0
+y = abs(1932*abs(acos(cos(pi*(20*x/69 + 1))) - pi) - 7*abs(276*acos(cos(pi*(20*x/69 + 1))) - 211*pi) + 65*pi)/(390*pi) - 545/192 + 79475*pi^2/(-1024*(69*acos(-cos(20*pi*x/69)) - 49*pi)^2 - 1024*(69*acos(-cos(20*pi*x/69)) - 29*pi)^2 + 2048*abs((69*acos(-cos(20*pi*x/69)) - 49*pi)*(69*acos(-cos(20*pi*x/69)) - 29*pi)) + 462400*pi^2)
+Color = clBlue
+
+[Func34]
+FuncType = 0
+y = x^2*(Heaviside(x, 1) + Heaviside(3 - x, 1) - 1) + (30 - 3*x)*Heaviside(x - 7, 1) + (sqrt((x - 7)*(x - 3))*(Heaviside(7 - x, 1) + Heaviside(x - 3, 1) - 1) + 9)*(Heaviside(7 - x, 1) + Heaviside(x - 3, 1) - 1)
+Visible = 0
+Color = clBlue
+
+[Data]
+TextLabelCount = 0
+FuncCount = 34
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
+[CustomFunctions]
+H(x) = If(x>=0, 1, 0)
+Heaviside(x,c) = If(x>0, 1, If(x=0, c, 0))
+

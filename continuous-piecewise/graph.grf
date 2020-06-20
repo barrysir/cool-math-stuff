@@ -1,0 +1,111 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -10.9640902577937
+xMax = 9.11171367775342
+xTickUnit = 5
+xGridUnit = 5
+yMin = -9.69613109446644
+yMax = 10.3796728410807
+yTickUnit = 5
+yGridUnit = 5
+AxesColor = clSilver
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+LegendPlacement = 3
+
+[Func1]
+FuncType = 0
+y = 2*(x+1)
+Visible = 0
+To = -1
+Color = clGreen
+
+[Func2]
+FuncType = 0
+y = x^2-1
+Visible = 0
+From = -1
+To = 2
+Color = clFuchsia
+
+[Func3]
+FuncType = 0
+y = 3
+Visible = 0
+From = 2
+Color = clBlue
+
+[Func4]
+FuncType = 0
+y = 0
+Visible = 0
+To = 0
+Color = 0x000033CC
+
+[Func5]
+FuncType = 0
+y = x
+Visible = 0
+From = 0
+Color = 0x000033CC
+
+[Func6]
+FuncType = 0
+y = -1/2*x*H(-x)
+Visible = 0
+Color = clGreen
+
+[Func7]
+FuncType = 0
+y = (-(x-1)^2+1) * H(x)
+Visible = 0
+Color = clPurple
+
+[Func8]
+FuncType = 0
+y = 1/2 * (abs(x) - abs(x-1) + 1)
+Visible = 0
+Color = clGreen
+
+[Func9]
+FuncType = 0
+y = R(x)
+Visible = 0
+Color = clGreen
+
+[Func10]
+FuncType = 0
+y = R(x-1)
+Visible = 0
+Color = clGreen
+
+[Func11]
+FuncType = 0
+y = x + (-3*abs(x/3 - 2/3)/2 + 3*abs(x/3 + 1/3)/2 + 1/2)^2 - abs(x + 1) + 3
+Visible = 0
+Color = clGreen
+
+[Func12]
+FuncType = 0
+y = abs(x-2) - abs(x-5) + 4
+Color = clGreen
+
+[Data]
+TextLabelCount = 0
+FuncCount = 12
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
+[CustomFunctions]
+H(x) = if(x>=0, 1, 0)
+R(x) = (x+abs(x))/2
+
