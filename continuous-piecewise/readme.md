@@ -13,3 +13,16 @@ Read the post [here [link to be added]]().
 `abssimp.py` - simplify expressions containing absolute values \
 `uwu.py` - code to generate the uwu functions
 
+## Example usage
+
+```python
+from absolute import Piecewise
+from sympy import sympify, oo   # turn numbers into sympy expressions
+
+f = Piecewise([
+    (x, -3, 0),
+    (x**2, 0, 2),
+    (sympify(4), 2, oo)
+])
+print(f)
+```
