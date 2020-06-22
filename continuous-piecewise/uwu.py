@@ -1,5 +1,5 @@
 from absolute import Glue, Undefined, Oscillate
-from abssimp import abssimp
+from abssimp import abssimp, forgraph
 from sympy import symbols, pi, sympify, latex, Rational, lambdify, oo
 
 x = symbols('x')
@@ -83,10 +83,10 @@ uv *= UWU_HEIGHT / (U_LEVEL-u_min)  # scale to the correct height
 #     (v, V_LEFT, V_RIGHT),
 # ], start_point=(-UWU_PERIOD/2, 0), left=(Undefined(-oo, 0), -oo, 0))
 
-uwu = uv.subs(x, -abs(x))
+uwu = uv.subs(x, -abs(x))   # reflect across y-axis
 # uwu = uv + uv.subs(x, -x) - uv.subs(x, 0).simplify()  # alternative way of writing it
 uwu = simplify_abs(uwu)
-print(str(uwu).replace('**', '^').replace('Abs', 'abs'))
+print(forgraph(uwu))
 
 uwu_repeat = Oscillate(
     uv,
@@ -94,4 +94,4 @@ uwu_repeat = Oscillate(
     [-UWU_PERIOD/2, 0]
 )
 uwu_repeat = simplify_abs(uwu_repeat)
-print(str(uwu_repeat).replace('**', '^').replace('Abs', 'abs'))
+print(forgraph(uwu_repeat))
