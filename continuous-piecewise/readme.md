@@ -1,7 +1,7 @@
 # continuous-piecewise
 
 Writing piecewise functions in a single equation using only "normal" functions. \
-Read the post [here [link to be added]]().
+Read the post [here](https://barrysir.github.io/blog/2020/06/20/continuous-piecewise.html).
 
 ## Requirements
 
